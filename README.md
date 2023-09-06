@@ -19,7 +19,7 @@ Exclusão de Filmes:
 
 Os filmes podem ser removidos permanentemente da coleção, se o usuário desejar.
 Tecnologias Utilizadas:
-Front-end: Desenvolvido em HTML, CSS e JavaScript, com uma interface de usuário amigável e responsiva.
-Back-end: Utiliza uma arquitetura de servidor para processar solicitações e interações do usuário.
-Banco de Dados: Armazena informações dos filmes em um banco de dados relacional, garantindo a consistência e persistência dos dados.
-Framework: Foi construído com a ajuda de um framework específico para acelerar o desenvolvimento e manutenção.
+Front-end: Desenvolvido em HTML, CSS e JavaScript.
+Back-end: NodeJS.
+Banco de Dados: SQLite.
+Framework: Express.js.
