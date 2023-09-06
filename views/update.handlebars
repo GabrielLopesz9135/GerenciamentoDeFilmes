@@ -1,0 +1,60 @@
+<h1 class="text-center my-3">Atualizar Filme: {{filme.titulo}}</h1>
+<form action="/update" method="POST">
+ <input type="hidden" name="id_filme" value="{{filme.id_filme}}" />
+ <div class="row w-50 d-block m-auto g-3">
+ <div class="col-12">
+ <label class="form-label" for="titulo">Titulo:</label>
+ <input
+ class="form-control"
+ type="titulo"
+ name="titulo"
+ id="titulo"
+ value="{{filme.titulo}}"
+ />
+ </div>
+   <div class="col-12">
+ <label class="form-label" for="titulo">Link do Poster:</label>
+ <input
+ class="form-control"
+ type="link_img"
+ name="link_img"
+ id="link_img"
+ value="{{filme.link_img}}"
+ />
+ </div>
+ <div class="col-12">
+ <label class="form-label" for="diretor">Diretor:</label>
+ <input
+ class="form-control"
+ type="diretor"
+ name="diretor"
+ id="diretor"
+ value="{{filme.diretor}}"
+ />
+ </div>
+ <div class="col-12">
+ <label class="form-label" for="genero">Genero:</label>
+ <input
+ class="form-control"
+ type="genero"
+ name="genero"
+ id="genero"
+ value="{{filme.genero}}"
+ />
+
+ <div class="col-12">
+ <label class="form-label" for="link">Sinopse:</label>
+ <input
+ class="form-control"
+ type="link_sinopse"
+ name="link_sinopse"
+ id="link_sinopse"
+ value="{{filme.link_sinopse}}"
+ />
+ </div>
+ <div>
+ <input class="btn btn-primary my-3" type="submit" value="Atualizar Filme"
+/>
+</div>
+ </div>
+</form>

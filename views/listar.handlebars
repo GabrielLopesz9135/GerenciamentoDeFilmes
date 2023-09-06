@@ -1,0 +1,34 @@
+<h1 class="text-center my-3">Lista de Todos os seus filmes Preferidos</h1>
+<table class="table">
+ <div class="row">
+ <div class="col-12">
+ <thead>
+<th>Poster</th>
+ <th>Título</th>
+ <th>Diretor</th>
+ <th>Genero</th>
+ <th>Sinopse</th>
+ <th>Açoes</th>
+ <th>Excluir</th>
+ </thead>
+ <tbody>
+ {{#each filme}}
+ <tr>
+<th> <img src="{{this.link_img}}" width="100px"></th>
+ <th>{{this.titulo}}</th>
+ <th>{{this.diretor}}</th>
+ <th>{{this.genero}}</th>
+ <th>{{this.link_sinopse}}</th>
+ <th><a href="/update/{{this.id_filme}}">Editar<i class="bi bi-pencilsquare"></i></a></th>
+ <th> <form class="borde-0 m-0" action="/remover" method="POST">
+ <input type="hidden" name="id_filme" value={{this.id_filme}}>
+ <input type="submit" value="Excluir" name="Excluir"/>
+
+ </form></th>
+
+ </tr>
+ {{/each}}
+</tbody>
+ </div>
+ </div>
+</table>
